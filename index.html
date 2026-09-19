@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DANSOU Fifamè Pierrette – Portfolio</title>
+<meta name="description" content="Portfolio de DANSOU Fifamè Pierrette, étudiante en informatique à Cotonou, orientée développement web, bases de données et solutions numériques.">
+<meta property="og:title" content="DANSOU Fifamè Pierrette – Portfolio">
+<meta property="og:description" content="Découvrez mes projets web, mes compétences en bases de données et mon parcours en informatique.">
+<meta property="og:type" content="website">
+<link rel="icon" type="image/jpeg" href="photo-profil.jpeg">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-logo">FP<span>.</span></div>
+  <div class="nav-profile">
+    <span class="nav-kicker">Portfolio personnel</span>
+    <strong>DANSOU Fifamè Pierrette</strong>
+  </div>
+  <ul class="nav-links">
+    <li><a href="#apropos">À propos</a></li>
+    <li><a href="#projets">Projets</a></li>
+    <li><a href="#competences">Compétences</a></li>
+    <li><a href="#parcours">Parcours</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <div class="nav-actions">
+    <a href="https://github.com/pierrette1234" target="_blank" class="nav-github" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+    <a href="cv-pro.html" class="nav-cv" aria-label="Voir le CV"><i class="fa-solid fa-file-pdf"></i><span>CV</span></a>
+  </div>
+  <button class="hamburger" id="hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#apropos"   onclick="closeMenu()"><i class="fa-solid fa-user" style="margin-right:10px;color:var(--accent);"></i>À propos</a>
+  <a href="#projets" onclick="closeMenu()"><i class="fa-solid fa-diagram-project" style="margin-right:10px;color:var(--accent);"></i>Projets</a>
+  <a href="#competences" onclick="closeMenu()"><i class="fa-solid fa-code" style="margin-right:10px;color:var(--accent);"></i>Compétences</a>
+  <a href="#parcours" onclick="closeMenu()"><i class="fa-solid fa-graduation-cap" style="margin-right:10px;color:var(--accent);"></i>Parcours</a>
+  <a href="#contact"   onclick="closeMenu()"><i class="fa-solid fa-envelope" style="margin-right:10px;color:var(--accent);"></i>Contact</a>
+  <a href="https://github.com/pierrette1234" target="_blank" onclick="closeMenu()" style="color:var(--accent);font-size:1.3rem;margin-top:0.5rem;"><i class="fa-brands fa-github" style="margin-right:10px;"></i>GitHub</a>
+  <a href="cv-pro.html" onclick="closeMenu()" style="color:var(--accent);font-size:1.3rem;margin-top:0.5rem;"><i class="fa-solid fa-file-pdf" style="margin-right:10px;"></i>Voir mon CV</a>
+</div>
+
+<!-- HERO -->
+<div style="padding: 0 2rem;">
+<section id="hero">
+  <div class="hero-inner">
+    <div>
+      <span class="hero-tag">Étudiante en L3 · Systèmes Informatiques & Logiciel · Cotonou, Bénin</span>
+      <h1 class="hero-name">DANSOU<br>Fifamè <span>Pierrette</span></h1>
+      <p class="hero-title">
+        Étudiante en informatique, orientée développement web et bases de données.<br>
+        Je transforme des besoins métier concrets en outils simples, structurés et utilisables.<br>
+        <strong style="color:var(--accent);">Étudiante en L3, disponible pour un stage ou une collaboration à distance.</strong>
+      </p>
+      <div class="hero-btns">
+        <a href="#projets" class="btn-primary">Voir mes projets <span>↗</span></a>
+        <a href="#contact" class="btn-outline">Me contacter <span>↗</span></a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="avatar-wrap">
+        <img src="photo-profil.jpeg" alt="Portrait de DANSOU Fifamè Pierrette">
+        <div class="orbit"><span></span> Disponible pour un stage</div>
+      </div>
+    </div>
+  </div>
+</section>
+</div>
+
+<!-- À PROPOS -->
+<section id="apropos">
+  <span class="section-label">Ce que je peux apporter</span>
+  <h2 class="section-title">Des solutions utiles, de la base de données à l'interface</h2>
+  <div class="section-line"></div>
+  <div class="about-grid">
+    <div class="about-text">
+      <p>Je suis <strong>DANSOU Fifamè Pierrette</strong>, étudiante en Licence 3 Systèmes Informatiques et Logiciel à l'UATM GASA Formation, à Cotonou.</p>
+      <p>Je conçois des applications web et des bases de données pour organiser des processus réels : inscriptions, stocks, commandes, suivi et gestion des rôles. Mon approche consiste à comprendre le besoin, modéliser les données, construire une interface claire puis tester les parcours importants.</p>
+      <p>En parallèle, je développe <strong>FP Services</strong>, mon activité de services numériques. Cette initiative me confronte à toute la chaîne d'un projet : besoin client, réalisation, communication et livraison.</p>
+    </div>
+    <div class="about-stats">
+      <div class="stat-card"><div class="stat-num">L3</div><div class="stat-label">Systèmes Informatiques & Logiciel</div></div>
+      <div class="stat-card"><div class="stat-num">4+</div><div class="stat-label">Projets complets réalisés</div></div>
+      <div class="stat-card"><div class="stat-num">Remote</div><div class="stat-label">Disponible pour stage et collaboration</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- COMPÉTENCES -->
+<section id="competences">
+  <span class="section-label">Savoir-faire</span>
+  <h2 class="section-title">Compétences techniques</h2>
+  <div class="section-line"></div>
+  <div class="skills-grid">
+
+    <div class="skill-card">
+      <div class="skill-icon"><i class="fa-solid fa-database"></i></div>
+      <h3>Bases de données</h3>
+      <div class="tags">
+        <span class="tag">SQL</span>
+        <span class="tag">MySQL</span>
+        <span class="tag">PostgreSQL</span>
+        <span class="tag">Modélisation MCD</span>
+        <span class="tag">Merise</span>
+        <span class="tag">Requêtes complexes</span>
+      </div>
+    </div>
+
+    <div class="skill-card">
+      <div class="skill-icon"><i class="fa-solid fa-globe"></i></div>
+      <h3>Développement web</h3>
+      <div class="tags">
+        <span class="tag">HTML5</span>
+        <span class="tag">CSS3</span>
+        <span class="tag">JavaScript</span>
+        <span class="tag">Responsive design</span>
+        <span class="tag">PHP (notions)</span>
+      </div>
+    </div>
+
+    <div class="skill-card">
+      <div class="skill-icon"><i class="fa-solid fa-laptop-code"></i></div>
+      <h3>Développement applicatif & mobile</h3>
+      <div class="tags">
+        <span class="tag">Java</span>
+        <span class="tag">NetBeans</span>
+        <span class="tag">PHP</span>
+        <span class="tag">Algorithmique</span>
+        <span class="tag">POO</span>
+        <span class="tag">Flutter (notions)</span>
+      </div>
+    </div>
+
+    <div class="skill-card">
+      <div class="skill-icon"><i class="fa-solid fa-file-excel"></i></div>
+      <h3>Microsoft Office</h3>
+      <div class="tags">
+        <span class="tag yellow">Microsoft Word</span>
+        <span class="tag yellow">Microsoft Excel</span>
+        <span class="tag yellow">Microsoft PowerPoint</span>
+        <span class="tag yellow">Microsoft Access</span>
+      </div>
+    </div>
+
+    <div class="skill-card">
+      <div class="skill-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+      <h3>Outils & méthodes</h3>
+      <div class="tags">
+        <span class="tag">Git / GitHub</span>
+        <span class="tag">VS Code</span>
+        <span class="tag">Linux (bases)</span>
+        <span class="tag">UML</span>
+      </div>
+    </div>
+
+    <div class="skill-card">
+      <div class="skill-icon"><i class="fa-solid fa-handshake"></i></div>
+      <h3>Compétences transversales</h3>
+      <div class="tags">
+        <span class="tag">Travail en équipe</span>
+        <span class="tag">Rigueur</span>
+        <span class="tag">Autonomie</span>
+        <span class="tag">Communication</span>
+        <span class="tag">Veille technologique</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- PROJETS -->
+<section id="projets" class="case-studies">
+  <span class="section-label">Études de cas</span>
+  <h2 class="section-title">Des projets pensés pour résoudre un vrai problème</h2>
+  <div class="section-line"></div>
+  <p class="section-intro">Je ne présente pas seulement une technologie : voici le besoin, les décisions prises, mon rôle et ce que chaque projet m'a appris.</p>
+
+  <article class="case-study featured-case">
+    <div class="case-visual web"><i class="fa-solid fa-graduation-cap"></i><span>Workflow académique</span></div>
+    <div class="case-content">
+      <div class="case-kicker">01 · Projet académique · Application réalisée</div>
+      <h3>Gestion des soutenances</h3>
+      <p class="case-problem"><strong>Problème.</strong> Centraliser les inscriptions, les jurys, le planning et les résultats au lieu de disperser le suivi entre fichiers et échanges manuels.</p>
+      <div class="case-details"><div><strong>Mon rôle</strong><span>Conception de la solution et développement de l'application web.</span></div><div><strong>Livrable</strong><span>Workflow de gestion des inscriptions, jurys, planning et résultats.</span></div><div><strong>Apprentissage</strong><span>Prévoir les rôles et les parcours avant de construire les écrans.</span></div></div>
+      <div class="project-techs"><span class="tag">PHP</span><span class="tag">MySQL</span><span class="tag">JavaScript</span><span class="tag">Gestion des rôles</span></div>
+      <span class="case-link case-link-muted">Code privé · présentation sur demande</span>
+      <div class="project-gallery featured-gallery" aria-label="Captures principales de l'application de gestion des soutenances">
+        <figure class="gallery-featured"><button class="gallery-trigger" type="button" data-gallery-index="1"><img src="assets/images/soutenances/connexion-admin.png" alt="Écran de connexion administrateur de la plateforme"></button><figcaption>Connexion administrateur</figcaption></figure>
+        <figure><button class="gallery-trigger" type="button" data-gallery-index="0"><img src="assets/images/soutenances/accueil.png" alt="Page d'accueil de la plateforme de gestion des soutenances"></button><figcaption>Accueil et fonctionnalités</figcaption></figure>
+        <figure><button class="gallery-trigger" type="button" data-gallery-index="7"><img src="assets/images/soutenances/deliberations.png" alt="Écran des délibérations et des résultats"></button><figcaption>Délibérations et résultats</figcaption></figure>
+      </div>
+      <button class="gallery-more" type="button" data-gallery-index="0">Voir toutes les captures <span>↗</span></button>
+      <p class="gallery-hint">8 vues disponibles · Cliquez sur une image pour l'agrandir</p>
+    </div>
+  </article>
+
+  <article class="case-study">
+    <div class="case-visual store"><i class="fa-solid fa-store"></i><span>Service numérique</span></div>
+    <div class="case-content">
+      <div class="case-kicker">02 · Projet personnel · En développement</div>
+      <h3>FP Services</h3>
+      <p class="case-problem"><strong>Objectif.</strong> Concevoir une plateforme de présentation et de commande de services numériques. Le site est actuellement en développement et n'est pas encore ouvert au public.</p>
+      <div class="case-details"><div><strong>Mon rôle</strong><span>Fondatrice, conceptrice et développeuse de la plateforme.</span></div><div><strong>Parcours pensé</strong><span>Présentation des services, commande et préparation du paiement Mobile Money.</span></div><div><strong>État actuel</strong><span>Version en développement, non encore publiée en ligne.</span></div></div>
+      <div class="project-techs"><span class="tag">PHP</span><span class="tag">MySQL</span><span class="tag">Mobile Money</span><span class="tag">En développement</span></div>
+      <span class="case-link case-link-muted">Code privé · présentation sur demande</span>
+    </div>
+  </article>
+
+  <article class="case-study">
+    <div class="case-visual notes"><i class="fa-solid fa-pills"></i><span>Données & stocks</span></div>
+    <div class="case-content">
+      <div class="case-kicker">03 · Projet académique</div>
+      <h3>Gestion d'une pharmacie</h3>
+      <p class="case-problem"><strong>Problème.</strong> Suivre les médicaments, les ventes et les fournisseurs tout en repérant rapidement les risques de rupture de stock.</p>
+      <div class="case-details"><div><strong>Mon rôle</strong><span>Développement de l'application et structuration des données.</span></div><div><strong>Choix techniques</strong><span>Java, POO, NetBeans et MySQL.</span></div><div><strong>Apprentissage</strong><span>Relier une interface desktop à des opérations de gestion quotidiennes.</span></div></div>
+      <div class="project-techs"><span class="tag">Java</span><span class="tag">POO</span><span class="tag">MySQL</span><span class="tag">Gestion de stock</span></div>
+      <span class="case-link case-link-muted">Code privé · présentation sur demande</span>
+    </div>
+  </article>
+</section>
+
+<!-- PARCOURS -->
+<div id="parcours">
+<!-- FORMATION -->
+<section id="formation">
+  <span class="section-label">Parcours</span>
+  <h2 class="section-title">Formation académique</h2>
+  <div class="section-line"></div>
+  <div class="timeline">
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-date">2026 – 2027 · En cours</div>
+      <div class="timeline-title">Licence 3 — Systèmes Informatiques et Logiciel</div>
+      <div class="timeline-school">UATM GASA Formation — Université Africaine de Technologie et de Management, Bénin · Bases de données avancées, Développement web & applicatif, Systèmes</div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-date">2025 – 2026</div>
+      <div class="timeline-title">Licence 2 — Systèmes Informatiques et Logiciel</div>
+      <div class="timeline-school">UATM GASA Formation — Université Africaine de Technologie et de Management, Bénin · Bases de données, Développement web & applicatif, Systèmes</div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-date">2024 – 2025</div>
+      <div class="timeline-title">Licence 1 — Systèmes Informatiques et Logiciel</div>
+      <div class="timeline-school">UATM GASA Formation — Université Africaine de Technologie et de Management, Bénin · Algorithmique, bases de la programmation, mathématiques</div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-date">2022 – 2023</div>
+      <div class="timeline-title">Diplôme Technique — Installation & Maintenance Informatique</div>
+      <div class="timeline-school">Lycée Technique Coulibaly — Bénin · Formation technique en maintenance matérielle, installation de systèmes et réseaux informatiques</div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPÉRIENCE -->
+<section id="experience">
+  <span class="section-label">Parcours professionnel</span>
+  <h2 class="section-title">Expérience</h2>
+  <div class="section-line"></div>
+  <div class="timeline">
+
+    <div class="timeline-item">
+      <div class="timeline-dot timeline-dot--highlight"></div>
+      <div class="timeline-date">2026 · En cours</div>
+      <div class="timeline-title">FP Services — Plateforme de services numériques <span class="timeline-status">· En développement</span></div>
+      <div class="timeline-school">Conception et développement d'une plateforme de présentation et de commande de services numériques. Le projet est actuellement en développement et n'est pas encore ouvert au public.</div>
+      <div class="exp-tags exp-tags--spaced">
+        <span class="tag">PHP</span>
+        <span class="tag">MySQL</span>
+        <span class="tag">HTML/CSS</span>
+        <span class="tag">JavaScript</span>
+        <span class="tag">JSON</span>
+        <span class="tag yellow">Initiative personnelle</span>
+        <span class="tag yellow">Projet complet</span>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-date">2024 – 2026 · Vacances scolaires</div>
+      <div class="timeline-title">Assistante Gérante <span style="color:var(--accent);">· Spoon Bar</span></div>
+      <div class="timeline-school">Cotonou, Bénin</div>
+      <div class="exp-tags">
+        <span class="tag">Supervision du personnel</span>
+        <span class="tag">Gestion des stocks</span>
+        <span class="tag">Suivi des stocks</span>
+        <span class="tag">Inventaire</span>
+        <span class="tag">Service client</span>
+        <span class="tag">Organisation</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+</div>
+
+<!-- LANGUES & CENTRES D'INTÉRÊT -->
+<section id="langues">
+  <span class="section-label">Langues & Intérêts</span>
+  <h2 class="section-title">Langues & Centres d'intérêt</h2>
+  <div class="section-line"></div>
+  <div style="display:grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
+
+    <div>
+      <h3 style="font-size:1rem; font-weight:600; margin-bottom:1.2rem; color:var(--accent);">Langues parlées</h3>
+      <div style="display:flex; flex-direction:column; gap:1rem;">
+        <div style="background:var(--card-bg); border:1px solid var(--border); border-radius:10px; padding:1rem 1.25rem;">
+          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
+            <span style="font-weight:600; font-size:0.95rem;">Français</span>
+            <span style="font-size:0.75rem; background:rgba(46,196,182,0.12); color:var(--accent); padding:3px 10px; border-radius:12px; border:1px solid rgba(46,196,182,0.3);">Courant</span>
+          </div>
+          <div style="background:rgba(255,255,255,0.06); border-radius:4px; height:6px; overflow:hidden;">
+            <div style="background:var(--accent); width:90%; height:100%; border-radius:4px;"></div>
+          </div>
+        </div>
+        <div style="background:var(--card-bg); border:1px solid var(--border); border-radius:10px; padding:1rem 1.25rem;">
+          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
+            <span style="font-weight:600; font-size:0.95rem;">Anglais</span>
+            <span style="font-size:0.75rem; background:rgba(232,197,71,0.1); color:var(--accent2); padding:3px 10px; border-radius:12px; border:1px solid rgba(232,197,71,0.3);">Débutant</span>
+          </div>
+          <div style="background:rgba(255,255,255,0.06); border-radius:4px; height:6px; overflow:hidden;">
+            <div style="background:var(--accent2); width:30%; height:100%; border-radius:4px;"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <h3 style="font-size:1rem; font-weight:600; margin-bottom:1.2rem; color:var(--accent);">Centres d'intérêt</h3>
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:0.75rem;">
+        <div style="background:var(--card-bg); border:1px solid var(--border); border-radius:10px; padding:1rem; text-align:center;">
+          <div style="font-size:1.5rem; margin-bottom:0.4rem; color:var(--accent);"><i class="fa-solid fa-microchip"></i></div>
+          <div style="font-size:0.8rem; font-weight:500;">Veille techno</div>
+          <div style="font-size:0.7rem; color:var(--muted); margin-top:2px;">Nouvelles technos & IA</div>
+        </div>
+        <div style="background:var(--card-bg); border:1px solid var(--border); border-radius:10px; padding:1rem; text-align:center;">
+          <div style="font-size:1.5rem; margin-bottom:0.4rem; color:var(--accent);"><i class="fa-solid fa-book-open"></i></div>
+          <div style="font-size:0.8rem; font-weight:500;">Lecture</div>
+          <div style="font-size:0.7rem; color:var(--muted); margin-top:2px;">Informatique & culture générale</div>
+        </div>
+        <div style="background:var(--card-bg); border:1px solid var(--border); border-radius:10px; padding:1rem; text-align:center;">
+          <div style="font-size:1.5rem; margin-bottom:0.4rem; color:var(--accent);"><i class="fa-solid fa-pen-ruler"></i></div>
+          <div style="font-size:0.8rem; font-weight:500;">Design UI</div>
+          <div style="font-size:0.7rem; color:var(--muted); margin-top:2px;">Interfaces & expérience utilisateur</div>
+        </div>
+        <div style="background:var(--card-bg); border:1px solid var(--border); border-radius:10px; padding:1rem; text-align:center;">
+          <div style="font-size:1.5rem; margin-bottom:0.4rem; color:var(--accent);"><i class="fa-solid fa-hands-holding-circle"></i></div>
+          <div style="font-size:0.8rem; font-weight:500;">Bénévolat</div>
+          <div style="font-size:0.7rem; color:var(--muted); margin-top:2px;">Aide & partage de connaissances</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <span class="section-label">Restons en contact</span>
+  <h2 class="section-title">Me contacter</h2>
+  <div class="section-line"></div>
+
+  <!-- Coordonnées en deux colonnes -->
+  <div class="coords-grid">
+    <!-- Colonne gauche -->
+    <div>
+      <div class="contact-item">
+        <div class="contact-item-icon"><i class="fa-solid fa-envelope"></i></div>
+        <div class="contact-item-text">
+          <strong>Email</strong>
+          <a href="mailto:daje11206@gmail.com" class="contact-link">daje11206@gmail.com</a>
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-item-icon"><i class="fa-solid fa-phone"></i></div>
+        <div class="contact-item-text">
+          <strong>WhatsApp</strong>
+          <a href="https://wa.me/2290162718280" target="_blank" rel="noopener" class="contact-link">+229 01 62 71 82 80</a>
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-item-icon"><i class="fa-brands fa-facebook"></i></div>
+        <div class="contact-item-text">
+          <strong>Facebook</strong>
+          Fifa Mè
+        </div>
+      </div>
+    </div>
+    <!-- Colonne droite -->
+    <div>
+      <div class="contact-item">
+        <div class="contact-item-icon"><i class="fa-solid fa-location-dot"></i></div>
+        <div class="contact-item-text">
+          <strong>Localisation</strong>
+          Cotonou, Bénin
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-item-icon"><i class="fa-brands fa-github"></i></div>
+        <div class="contact-item-text">
+          <strong>GitHub</strong>
+          <a href="https://github.com/pierrette1234" target="_blank" style="color:var(--accent);text-decoration:none;">github.com/pierrette1234</a>
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-item-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+        <div class="contact-item-text">
+          <strong>Statut</strong>
+          Étudiante en L3 · Disponible pour stage
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Formulaire -->
+  <div class="contact-wrap contact-wrap--form">
+    <div class="contact-info">
+      <h3>Parlons de vos projets</h3>
+      <p>Je suis disponible pour des stages, projets académiques ou toute collaboration. N'hésitez pas à me contacter.</p>
+    </div>
+    <div>
+      <form action="https://formspree.io/f/xkjgowbr" method="POST">
+      <div class="form-group">
+        <label>Votre nom</label>
+        <input type="text" name="nom" placeholder="Jean Dupont" required>
+      </div>
+      <div class="form-group">
+        <label>Votre email</label>
+        <input type="email" name="_replyto" placeholder="jean@example.com" required>
+      </div>
+      <div class="form-group">
+        <label>Sujet</label>
+        <input type="text" name="sujet" placeholder="Proposition de stage..." required>
+      </div>
+      <div class="form-group">
+        <label>Message</label>
+        <textarea name="message" placeholder="Votre message..." required></textarea>
+      </div>
+      <button type="submit" class="btn-primary form-submit">Envoyer le message</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 DANSOU Fifamè Pierrette · Portfolio personnel · Conçu avec passion</p>
+</footer>
+
+<div class="gallery-modal" id="galleryModal" role="dialog" aria-modal="true" aria-label="Visionneuse des captures" hidden>
+  <button class="gallery-close" type="button" aria-label="Fermer">×</button>
+  <button class="gallery-prev" type="button" aria-label="Image précédente">‹</button>
+  <figure><img id="galleryImage" src="" alt=""><figcaption id="galleryCaption"></figcaption></figure>
+  <button class="gallery-next" type="button" aria-label="Image suivante">›</button>
+</div>
+
+<script src="assets/js/script.js"></script>
+</body>
+</html>

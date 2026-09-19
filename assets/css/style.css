@@ -185,15 +185,16 @@ footer { margin-left: 300px; text-align: center; padding: 2rem; border-top: 1px 
   .nav-profile, .nav-links, .nav-actions { display: none; }
   .hamburger { display: flex; margin-left: auto; flex-direction: column; gap: 4px; padding: .4rem; background: transparent; border: 0; }
   .hamburger span { display: block; width: 22px; height: 2px; background: var(--accent); }
-  .mobile-menu { position: fixed; top: 68px; left: 0; right: 0; bottom: 0; z-index: 999; display: none; flex-direction: column; align-items: center; justify-content: center; gap: .8rem; background: var(--bg); }
+  .mobile-menu { position: fixed; top: 78px; left: 1rem; right: 1rem; bottom: auto; z-index: 999; display: none; max-height: calc(100vh - 100px); overflow-y: auto; flex-direction: column; align-items: stretch; justify-content: flex-start; gap: .2rem; padding: .8rem; background: rgba(23,45,67,.98); border: 1px solid var(--border); box-shadow: 0 14px 35px rgba(0,0,0,.3); }
   .mobile-menu.open { display: flex; animation: menu-in .25s ease both; }
   @keyframes menu-in { from { opacity: 0; transform: translateY(-8px); } to { opacity: 1; transform: translateY(0); } }
   .hamburger span { transition: transform .2s, opacity .2s; }
   .hamburger.open span:nth-child(1) { transform: translateY(6px) rotate(45deg); }
   .hamburger.open span:nth-child(2) { opacity: 0; }
   .hamburger.open span:nth-child(3) { transform: translateY(-6px) rotate(-45deg); }
-  .mobile-menu a { color: var(--text); text-decoration: none; font: .8rem 'Space Mono', monospace; text-transform: uppercase; padding: .7rem; }
-  .mobile-menu a:hover { color: var(--accent); }
+  .mobile-menu a { color: var(--text); text-decoration: none; font: .8rem 'Space Mono', monospace; text-transform: uppercase; padding: .75rem 1rem; border-bottom: 1px solid rgba(136,153,170,.12); }
+  .mobile-menu a:last-child { border-bottom: 0; }
+  .mobile-menu a:hover { color: var(--accent); background: rgba(120,224,208,.06); }
   body > div[style*="padding"], footer { margin-left: 0; }
   section { padding: 5rem 1.2rem 3rem; }
   #hero { min-height: auto; padding-top: 8rem; }
@@ -216,4 +217,10 @@ footer { margin-left: 300px; text-align: center; padding: 2rem; border-top: 1px 
   .gallery-next { right: .5rem; }
   .coords-grid { grid-template-columns: 1fr; padding: 1.3rem; }
   .contact-wrap { padding: 1.3rem; }
+}
+@media (max-width: 520px) {
+  .about-stats { grid-template-columns: 1fr; }
+  .hero-name { font-size: 2.35rem; }
+  .section-title { font-size: 1.7rem; }
+  .case-content h3 { font-size: 1.25rem; }
 }

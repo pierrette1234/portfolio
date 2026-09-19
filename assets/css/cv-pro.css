@@ -76,12 +76,28 @@ body { background: #f0f2f5; font-family: 'DM Sans', sans-serif; font-size: 14px;
 .back-link { color: #fff; text-decoration: none; font-size: 13px; font-weight: 500; padding: 10px 20px; background: rgba(255,255,255,.1); border-radius: 6px; display: inline-block; transition: background .2s; }
 .back-link:hover { background: rgba(255,255,255,.2); }
 @media (max-width: 768px) {
-  .cv-header-main { flex-direction: column-reverse; align-items: center; text-align: center; }
-  .cv-body { flex-direction: column; }
-  .cv-left-column { border-right: none; border-bottom: 1px solid #e5e7eb; }
-  .cv-name { font-size: 20px; }
-  .cv-title { font-size: 13px; }
-  .cv-contact-inline { justify-content: center; }
+  html, body { overflow-x: auto; }
+  body { min-width: 210mm; padding: 0; font-size: 14px; }
+  .cv-page { width: 210mm; min-width: 210mm; max-width: none; margin: 0; box-shadow: none; }
+  .cv-header { padding: 30px 40px; }
+  .cv-header-main { flex-direction: row; align-items: flex-start; text-align: left; gap: 20px; }
+  .cv-header-text { width: auto; text-align: left; }
+  .cv-photo-container img { width: 100px; height: 100px; }
+  .cv-body { flex-direction: row; }
+  .cv-left-column { flex: 0 0 64%; width: auto; padding: 30px 35px; border-right: 1px solid #e5e7eb; border-bottom: none; }
+  .cv-right-column { flex: 1; width: auto; padding: 30px 35px; }
+  .cv-name { font-size: 16px; text-align: left; }
+  .cv-title { font-size: 24px; line-height: 1.2; text-align: left; }
+  .cv-orientation { font-size: 13px; text-align: left; }
+  .cv-contact-inline { justify-content: flex-start; flex-wrap: nowrap; white-space: nowrap; gap: 4px; line-height: 1.6; }
+  .cv-contact-inline .sep { display: inline; }
+  .experience-header, .education-header { flex-direction: row; gap: 0; }
+  .experience-title, .education-title { font-size: 15px; }
+  .experience-date, .education-year { font-size: 12px; }
+  .cv-profile-section { padding: 26px 40px 6px; }
+  .profile-text { font-size: 14px; line-height: 1.7; }
+  .footer-buttons { flex-direction: row; gap: 15px; }
+  .download-btn, .back-link { width: auto; }
 }
 @media print {
   * { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; }

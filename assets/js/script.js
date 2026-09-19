@@ -22,17 +22,22 @@ const parcoursLink = document.querySelector('.nav-links a[href="#parcours"]');
 const parcoursContainer = document.getElementById('parcours');
 
 function updateActiveNav() {
+  const marker = window.scrollY + Math.min(window.innerHeight * 0.35, 260);
   let current = '';
+
   sections.forEach((section) => {
-    if (window.scrollY >= section.offsetTop - 120) {
+    if (marker >= section.offsetTop) {
       current = section.getAttribute('id');
     }
   });
 
+  const inParcours = parcoursContainer &&
+    marker >= parcoursContainer.offsetTop &&
+    marker < (document.getElementById('langues')?.offsetTop || Infinity);
+
   navLinks.forEach((link) => {
-    const isParcoursSection = ['formation', 'experience'].includes(current);
     const href = link.getAttribute('href');
-    const isActive = href === `#${current}` || (isParcoursSection && link === parcoursLink);
+    const isActive = href === `#${current}` || (inParcours && link === parcoursLink);
     link.classList.toggle('is-active', isActive);
   });
 }

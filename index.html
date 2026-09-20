@@ -312,54 +312,54 @@
   <span class="section-label">Langues & Intérêts</span>
   <h2 class="section-title">Langues & Centres d'intérêt</h2>
   <div class="section-line"></div>
-  <div style="display:grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
+  <div class="langues-grid">
 
     <div>
-      <h3 style="font-size:1rem; font-weight:600; margin-bottom:1.2rem; color:var(--accent);">Langues parlées</h3>
-      <div style="display:flex; flex-direction:column; gap:1rem;">
-        <div style="background:var(--card-bg); border:1px solid var(--border); border-radius:10px; padding:1rem 1.25rem;">
-          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
-            <span style="font-weight:600; font-size:0.95rem;">Français</span>
-            <span style="font-size:0.75rem; background:rgba(46,196,182,0.12); color:var(--accent); padding:3px 10px; border-radius:12px; border:1px solid rgba(46,196,182,0.3);">Courant</span>
+      <h3 class="langues-title">Langues parlées</h3>
+      <div class="langues-list">
+        <div class="langue-item">
+          <div class="langue-header">
+            <span class="langue-name">Français</span>
+            <span class="langue-badge langue-badge-courant">Courant</span>
           </div>
-          <div style="background:rgba(255,255,255,0.06); border-radius:4px; height:6px; overflow:hidden;">
-            <div style="background:var(--accent); width:90%; height:100%; border-radius:4px;"></div>
+          <div class="langue-bar">
+            <div class="langue-progress langue-progress-courant"></div>
           </div>
         </div>
-        <div style="background:var(--card-bg); border:1px solid var(--border); border-radius:10px; padding:1rem 1.25rem;">
-          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
-            <span style="font-weight:600; font-size:0.95rem;">Anglais</span>
-            <span style="font-size:0.75rem; background:rgba(232,197,71,0.1); color:var(--accent2); padding:3px 10px; border-radius:12px; border:1px solid rgba(232,197,71,0.3);">Débutant</span>
+        <div class="langue-item">
+          <div class="langue-header">
+            <span class="langue-name">Anglais</span>
+            <span class="langue-badge langue-badge-debutant">Débutant</span>
           </div>
-          <div style="background:rgba(255,255,255,0.06); border-radius:4px; height:6px; overflow:hidden;">
-            <div style="background:var(--accent2); width:30%; height:100%; border-radius:4px;"></div>
+          <div class="langue-bar">
+            <div class="langue-progress langue-progress-debutant"></div>
           </div>
         </div>
       </div>
     </div>
 
     <div>
-      <h3 style="font-size:1rem; font-weight:600; margin-bottom:1.2rem; color:var(--accent);">Centres d'intérêt</h3>
-      <div style="display:grid; grid-template-columns:1fr 1fr; gap:0.75rem;">
-        <div style="background:var(--card-bg); border:1px solid var(--border); border-radius:10px; padding:1rem; text-align:center;">
-          <div style="font-size:1.5rem; margin-bottom:0.4rem; color:var(--accent);"><i class="fa-solid fa-microchip"></i></div>
-          <div style="font-size:0.8rem; font-weight:500;">Veille techno</div>
-          <div style="font-size:0.7rem; color:var(--muted); margin-top:2px;">Nouvelles technos & IA</div>
+      <h3 class="langues-title">Centres d'intérêt</h3>
+      <div class="interets-grid">
+        <div class="interet-card">
+          <div class="interet-icon"><i class="fa-solid fa-microchip"></i></div>
+          <div class="interet-name">Veille techno</div>
+          <div class="interet-desc">Nouvelles technos & IA</div>
         </div>
-        <div style="background:var(--card-bg); border:1px solid var(--border); border-radius:10px; padding:1rem; text-align:center;">
-          <div style="font-size:1.5rem; margin-bottom:0.4rem; color:var(--accent);"><i class="fa-solid fa-book-open"></i></div>
-          <div style="font-size:0.8rem; font-weight:500;">Lecture</div>
-          <div style="font-size:0.7rem; color:var(--muted); margin-top:2px;">Informatique & culture générale</div>
+        <div class="interet-card">
+          <div class="interet-icon"><i class="fa-solid fa-book-open"></i></div>
+          <div class="interet-name">Lecture</div>
+          <div class="interet-desc">Informatique & culture générale</div>
         </div>
-        <div style="background:var(--card-bg); border:1px solid var(--border); border-radius:10px; padding:1rem; text-align:center;">
-          <div style="font-size:1.5rem; margin-bottom:0.4rem; color:var(--accent);"><i class="fa-solid fa-pen-ruler"></i></div>
-          <div style="font-size:0.8rem; font-weight:500;">Design UI</div>
-          <div style="font-size:0.7rem; color:var(--muted); margin-top:2px;">Interfaces & expérience utilisateur</div>
+        <div class="interet-card">
+          <div class="interet-icon"><i class="fa-solid fa-pen-ruler"></i></div>
+          <div class="interet-name">Design UI</div>
+          <div class="interet-desc">Interfaces & expérience utilisateur</div>
         </div>
-        <div style="background:var(--card-bg); border:1px solid var(--border); border-radius:10px; padding:1rem; text-align:center;">
-          <div style="font-size:1.5rem; margin-bottom:0.4rem; color:var(--accent);"><i class="fa-solid fa-hands-holding-circle"></i></div>
-          <div style="font-size:0.8rem; font-weight:500;">Bénévolat</div>
-          <div style="font-size:0.7rem; color:var(--muted); margin-top:2px;">Aide & partage de connaissances</div>
+        <div class="interet-card">
+          <div class="interet-icon"><i class="fa-solid fa-hands-holding-circle"></i></div>
+          <div class="interet-name">Bénévolat</div>
+          <div class="interet-desc">Aide & partage de connaissances</div>
         </div>
       </div>
     </div>

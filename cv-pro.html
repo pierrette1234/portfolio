@@ -30,6 +30,8 @@
                     <span><i class="fa-solid fa-location-dot"></i> Cotonou, Bénin</span>
                     <span class="sep">|</span>
                     <span><i class="fa-brands fa-github"></i> <a href="https://github.com/pierrette1234" target="_blank">github.com/pierrette1234</a></span>
+                    <span class="sep">|</span>
+                    <span><i class="fa-brands fa-linkedin"></i> <a href="https://linkedin.com/in/pierrette1234" target="_blank">LinkedIn</a></span>
                 </div>
             </div>
             <div class="cv-photo-container">
@@ -186,13 +188,30 @@
 
 </div>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
 <script>
 function downloadCV() {
     const cvContent = document.getElementById('cv-content');
     const originalTitle = document.title;
     
-    // Utiliser window.print() pour permettre l'impression/sauvegarde en PDF
-    window.print();
+    // Configuration html2pdf
+    const opt = {
+        margin: 0,
+        filename: 'CV_DANSOU_Fifame_Pierrette.pdf',
+        image: { type: 'jpeg', quality: 0.98 },
+        html2canvas: { scale: 2, useCORS: true },
+        jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
+    };
+    
+    // Générer le PDF
+    html2pdf().set(opt).from(cvContent).save().then(() => {
+        console.log('PDF généré avec succès');
+    }).catch((err) => {
+        console.error('Erreur lors de la génération du PDF:', err);
+        // Fallback: utiliser window.print() si html2pdf échoue
+        alert('La génération automatique du PDF a échoué. Utilisation de l\'impression système...');
+        window.print();
+    });
 }
 </script>
 
